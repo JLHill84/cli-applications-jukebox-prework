@@ -20,6 +20,6 @@ def help
  
  def list(songs)
    songs.each_with_index do |value, index|
-     puts (index + 1) + ". #{value}"
+     puts (index + 1).to_s + ". #{value}"
    end
  end
