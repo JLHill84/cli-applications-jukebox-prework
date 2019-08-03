@@ -27,12 +27,10 @@ def help
  def play(songs)
    puts "Please enter a song name or number:"
    uInput = gets.strip
-   songs.each_with_index do |value, index|
-     if uInput = value || index + 1
-       puts "Playing #{value}"
-     else
-       puts "Invalid input, please try again"
-     end
+   if uInput = value || index + 1
+     puts "Playing #{value}"
+   else
+     puts "Invalid input, please try again"
    end
  end
  
