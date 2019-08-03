@@ -30,7 +30,8 @@ def help
    songs.each_with_index do |value, index|
      if uInput = value || index+1
        puts "Playing #{value}"
-     end
+     else
+       puts "Invalid input, please try again"
    end
  end
  
