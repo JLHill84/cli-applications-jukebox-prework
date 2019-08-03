@@ -23,3 +23,7 @@ def help
      puts (index + 1).to_s + ". #{value}"
    end
  end
+ 
+ def play(songs)
+   puts "Please enter a song name or number:"
+   ui = gets.strip
